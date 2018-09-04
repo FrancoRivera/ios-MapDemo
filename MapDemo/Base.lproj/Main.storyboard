@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,54 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-IB-9rg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-e3-rrR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" red="0.53320696797966682" green="0.55336061487714516" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Ub8-e3-rrR" firstAttribute="leading" secondItem="dAl-IB-9rg" secondAttribute="leading" id="Abl-mD-6hd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ub8-e3-rrR" secondAttribute="trailing" id="GL2-9E-atG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ub8-e3-rrR" secondAttribute="bottom" id="XPl-1Z-RjT"/>
+                                    <constraint firstItem="Ub8-e3-rrR" firstAttribute="top" secondItem="dAl-IB-9rg" secondAttribute="top" id="rZq-Yh-Dlr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dAl-IB-9rg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HxN-iZ-HxJ"/>
+                            <constraint firstItem="dAl-IB-9rg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yfm-bc-36x"/>
+                            <constraint firstItem="dAl-IB-9rg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bnu-cu-Js3"/>
+                            <constraint firstItem="dAl-IB-9rg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qXe-2n-Zyb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="byN-8E-LRA" appends="YES" id="a4V-hg-Vr9"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ub8-e3-rrR" id="DKH-OG-eeS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="byN-8E-LRA">
+                    <connections>
+                        <action selector="scalePiece:" destination="BYZ-38-t0r" id="qmN-Yf-WnG"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

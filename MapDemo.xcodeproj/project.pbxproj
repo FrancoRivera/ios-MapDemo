@@ -12,6 +12,9 @@
 		9DC3A9822130BAD200AFDECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3A9802130BAD200AFDECC /* Main.storyboard */; };
 		9DC3A9842130BAD400AFDECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3A9832130BAD400AFDECC /* Assets.xcassets */; };
 		9DC3A9872130BAD400AFDECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3A9852130BAD400AFDECC /* LaunchScreen.storyboard */; };
+		9DC3A98F2130C39100AFDECC /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3A98E2130C39100AFDECC /* Block.swift */; };
+		9DC3A9912130CACE00AFDECC /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3A9902130CACE00AFDECC /* Ellipse.swift */; };
+		9DFC5C49213DFF5F00E8D93F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC5C48213DFF5F00E8D93F /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9DC3A9832130BAD400AFDECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC3A9862130BAD400AFDECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC3A9882130BAD400AFDECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC3A98E2130C39100AFDECC /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		9DC3A9902130CACE00AFDECC /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
+		9DFC5C48213DFF5F00E8D93F /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				9DC3A9832130BAD400AFDECC /* Assets.xcassets */,
 				9DC3A9852130BAD400AFDECC /* LaunchScreen.storyboard */,
 				9DC3A9882130BAD400AFDECC /* Info.plist */,
+				9DC3A98E2130C39100AFDECC /* Block.swift */,
+				9DC3A9902130CACE00AFDECC /* Ellipse.swift */,
+				9DFC5C48213DFF5F00E8D93F /* Map.swift */,
 			);
 			path = MapDemo;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFC5C49213DFF5F00E8D93F /* Map.swift in Sources */,
+				9DC3A98F2130C39100AFDECC /* Block.swift in Sources */,
 				9DC3A97F2130BAD200AFDECC /* ViewController.swift in Sources */,
+				9DC3A9912130CACE00AFDECC /* Ellipse.swift in Sources */,
 				9DC3A97D2130BAD200AFDECC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = GUS5CNHZJR;
 				INFOPLIST_FILE = MapDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8468U436K8;
+				DEVELOPMENT_TEAM = GUS5CNHZJR;
 				INFOPLIST_FILE = MapDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
